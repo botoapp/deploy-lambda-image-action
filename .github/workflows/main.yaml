@@ -1,0 +1,15 @@
+name: Test Run
+on:
+  push
+jobs:
+  lambda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: botapp/deploy-lambda-image-action@master
+        with:
+          ECR_IMAGE_URI: xxx
+          LAMBDA_FUNCTION_NAME: TEST-FUNCTION
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
+          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}

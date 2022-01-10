@@ -1,0 +1,23 @@
+{
+  "name": "deploy-lambda-image-action",
+  "version": "0.0.1",
+  "description": "AWS lambda github action to deploy an image from ECR",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1053.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botoapp/deploy-lambda-image-action.git"
+  },
+  "author": "Javi Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/botoapp/deploy-lambda-image-action/issues"
+  },
+  "homepage": "https://github.com/botoapp/deploy-lambda-image-action#readme"
+}

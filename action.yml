@@ -1,0 +1,25 @@
+name: 'Deploy AWS Lambda Action (Image)'
+description: 'Deploy AWS Lambda Function (Image)'
+author: 'Javi Romero'
+branding:
+  icon: 'check-square'
+  color: 'orange'
+inputs:
+  ECR_IMAGE_URI:
+    description: 'ECR Image URI'
+    default: ''
+  LAMBDA_FUNCTION_NAME:
+    description: 'Lambda Function Name'
+    default: ''
+  AWS_SECRET_KEY:
+    description: 'AWS Secret Key'
+    default: ''
+  AWS_SECRET_ID:
+    description: 'AWS Secret Key'
+    default: ''
+  AWS_REGION:
+    description: 'AWS Region'
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
