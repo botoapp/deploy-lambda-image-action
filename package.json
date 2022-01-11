@@ -4,8 +4,9 @@
   "description": "AWS lambda github action to deploy an image from ECR",
   "main": "index.js",
   "dependencies": {
-    "aws-sdk": "^2.1053.0",
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "aws-sdk": "^2.1053.0"
   },
   "devDependencies": {},
   "scripts": {
